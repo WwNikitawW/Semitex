@@ -1,0 +1,231 @@
+.benefit {
+    background-color: #F2F2F4;
+    width: 100%;
+    min-height: 1200px;
+    text-align: center;
+
+    &_heading {
+        font-size: 40px;
+        padding-top: 80px;
+        color: #111111;
+    }
+
+    &_text {
+        font-size: 22px;
+        padding-top: 25px;
+        color: #030303;
+    }
+
+    &_cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &__card {
+            width: 370px;
+            height: 405px;
+            background-color: #fff;
+            margin: 15px 20px;
+            border-radius: 10px;
+            text-align: center;
+
+            &-img {
+                width: 157px;
+                height: 162px;
+                margin-top: 40px;
+            }
+
+            &-heading {
+                font-size: 20px;
+                font-weight: bold;
+                margin-top: 40px;
+            }
+
+            &-text {
+                width: 300px;
+                font-size: 20px;
+                margin: 15px 35px 0 35px;
+                display: block;
+                position: relative;
+            }
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .benefit {
+        &_text {
+            font-size: 18px;
+            padding: 25px 0 20px 0;
+        }
+        &_cards {
+            &__card {
+                width: 340px;
+                height: 405px;
+                margin: 10px 15px;
+                &-text {
+                    width: 300px;
+                    font-size: 20px;
+                    margin: 15px 20px 0 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .benefit {
+        &_cards {
+            &__card {
+                width: 280px;
+                height: 405px;
+                margin: 10px 15px;
+                &-img {
+                    width: 130px;
+                    height: 140px;
+                    margin-top: 30px;
+                }
+                &-heading {
+                    font-size: 18px;
+                    margin-top: 30px;
+                }
+                &-text {
+                    width: 200px;
+                    font-size: 18px;
+                    margin: 15px 35px 0 35px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .benefit {
+        &_cards {
+            &__card {
+                width: 240px;
+                height: 405px;
+                margin: 10px 15px;
+                &-img {
+                    width: 130px;
+                    height: 140px;
+                    margin-top: 30px;
+                }
+                &-heading {
+                    font-size: 18px;
+                    margin-top: 30px;
+                }
+                &-text {
+                    width: 200px;
+                    font-size: 18px;
+                    margin: 15px 20px 0 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .benefit {
+        &_heading {
+            font-size: 32px;
+        }
+    
+        &_text {
+            font-size: 16px;
+            margin: 0 5px;
+        }
+        &_cards {
+            &__card {
+                width: 220px;
+                height: 300px;
+                margin: 10px 15px;
+                &-img {
+                    width: 120px;
+                    height: 130px;
+                    margin-top: 15px;
+                }
+                &-heading {
+                    font-size: 16px;
+                    margin-top: 15px;
+                }
+                &-text {
+                    width: 200px;
+                    font-size: 16px;
+                    margin: 15px 10px 0 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .benefit {
+        &_heading {
+            font-size: 32px;
+        }
+    
+        &_text {
+            font-size: 16px;
+            margin: 0 5px;
+        }
+        &_cards {
+            padding: 0 0 0 80px;
+            &__card {
+                width: 300px;
+                height: 350px;
+                margin: 10px 15px;
+                &-img {
+                    width: 140px;
+                    height: 150px;
+                    margin-top: 15px;
+                }
+                &-heading {
+                    font-size: 20px;
+                    margin-top: 15px;
+                }
+                &-text {
+                    width: 260px;
+                    font-size: 20px;
+                    margin: 15px 20px 0 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .benefit {
+        &_heading {
+            font-size: 25px;
+        }
+    
+        &_text {
+            font-size: 14px;
+            margin: 0 5px;
+        }
+        &_cards {
+            padding: 0 0 0 0;
+            &__card {
+                width: 280px;
+                height: 350px;
+                margin: 10px 15px;
+                &-img {
+                    width: 130px;
+                    height: 140px;
+                    margin-top: 15px;
+                }
+                &-heading {
+                    font-size: 18px;
+                    margin-top: 15px;
+                }
+                &-text {
+                    width: 260px;
+                    font-size: 18px;
+                    margin: 15px 10px 0 10px;
+                }
+            }
+        }
+    }
+}

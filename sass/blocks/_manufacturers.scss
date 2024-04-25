@@ -1,0 +1,122 @@
+.manufacturers {
+    width: 100%;
+    height: 730px;
+    background-color: #0809A7;
+    position: relative;
+    text-align: center;
+
+    &_img {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    &_heading {
+        padding: 150px 0 50px 0;
+        font-weight: bold;
+        font-size: 45px;
+        color: #fff;
+    }
+
+    &_text {
+        padding-top: 40px;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .owl-img {
+        width: 240px;
+        height: 170px;
+        border-radius: 10px;
+    }
+
+    .owl-carousel {
+        .owl-nav {
+            position: relative;
+            .owl-next {
+                color:#fff;
+                font-size: 20px;
+                position: absolute;
+                right: -40px;
+                bottom: 80px;
+                transform-style: preserve-3d;
+
+                &::before {
+                    content: '';
+                    width: 40px;
+                    height: 40px;
+                    background-color: #494ABC;
+                    border-radius: 100%;
+                    display: block;
+                    position: absolute;
+                    left: -18px;
+                    top: -7px;
+                    transform: translateZ(-1px);
+
+                }
+            }
+
+            .owl-prev {
+                color:#fff;
+                font-size: 20px;
+                position: absolute;
+                left: -40px;
+                bottom: 80px;
+                transform-style: preserve-3d;
+
+                &::before {
+                    content: '';
+                    width: 40px;
+                    height: 40px;
+                    background-color: #494ABC;
+                    border-radius: 100%;
+                    display: block;
+                    position: absolute;
+                    left: -16px;
+                    top: -7px;
+                    transform: translateZ(-1px);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .manufacturers {
+        &_text {
+            padding-top: 60px;
+            font-size: 20px;
+        }
+        .owl-carousel {
+            .owl-nav {
+                .owl-next {
+                    right: 46%;
+                    bottom: -20px;
+                }
+    
+                .owl-prev {
+                    left: 46%;
+                    bottom: -20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .manufacturers {
+        .owl-carousel {
+            .owl-nav {
+                .owl-next {
+                    right: 40%;
+                    bottom: -20px;
+                }
+    
+                .owl-prev {
+                    left: 40%;
+                    bottom: -20px;
+                }
+            }
+        }
+    }
+}

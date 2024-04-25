@@ -1,0 +1,636 @@
+.scheme {
+    background: url('../../src/img/scheme.png');
+    width: 100%;
+    min-height: 1000px;
+    position: relative;
+    text-align: center;
+
+    &_img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    &_heading {
+        padding-top: 130px;
+        font-size: 45px;
+        font-weight: bold;
+        color: #111111;
+    }
+
+    &_text {
+        padding-top: 25px;
+        font-size: 22px;
+        color: #333333;
+    }
+
+    &_button {
+        width: 300px;
+        height: 60px;
+        background-color: #FFA500;
+        border-radius: 10px;
+        margin-top: 50px;
+        color:#fff;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+    }
+
+    &_cards {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+
+        &__card {
+            margin: 10px;
+            width: 400px;
+            height: 250px;
+            background: linear-gradient(150deg, #041080 35%, #0926C0 80%,);
+            border-radius: 10px;
+            position: relative;
+            text-align: left;
+            &::before {
+                content: ''; 
+                position: absolute;
+                right: -42px; 
+                top: 100px;
+                border: 25px solid transparent;
+                border-left: 18px solid #0926C0;
+                border-radius: 3px;
+            }
+
+            &_number {
+                position: absolute;
+                left: 40px;
+                top: 40px;
+                font-size: 36px;
+                font-weight: bold;
+                color: #969AF7;
+            }
+
+            &_heading {
+                color: #fff;
+                font-size: 18px;
+                font-weight: bold;
+                margin: 40px 40px  0 100px;
+            }
+
+            &_text {
+                color: #E3E3E3;
+                font-size: 18px;
+                margin: 15px 40px 0 100px;
+            }
+        }
+    }
+}
+
+.card2 {
+    position: relative;
+    &::after {
+        content: ''; 
+        position: absolute;
+        left: 0px; 
+        top: 100px;
+        border: 25px solid transparent;
+        border-left: 18px solid #f2f2f4;
+    }
+}
+
+.card3 {
+    position: relative;
+    &::after {
+        content: ''; 
+        position: absolute;
+        left: 0px; 
+        top: 100px;
+        border: 25px solid transparent;
+        border-left: 18px solid #f2f2f4;
+
+    }
+    &::before {
+        content: ''; 
+        position: absolute;
+        right: 180px; 
+        top: 246px;
+        border: 25px solid transparent;
+        border-left: 18px solid #0926C0;
+        rotate: 90deg;
+    }
+}
+
+.card4 {
+    position: relative;
+    &::after {
+        content: ''; 
+        position: absolute;
+        left: 179px; 
+        top: -4px;
+        border: 25px solid transparent;
+        border-left: 18px solid #f2f2f4;
+        rotate: 90deg;
+    }
+    &::before {
+        content: ''; 
+        position: absolute;
+        right: 400px; 
+        top: 100px;
+        border: 25px solid transparent;
+        border-left: 18px solid #041080;
+        rotate: 180deg;
+    }
+}
+
+.card5 {
+    position: relative;
+    &::after {
+        content: ''; 
+        position: absolute;
+        left: 360px; 
+        top: 100px;
+        border: 25px solid transparent;
+        border-left: 18px solid #f2f2f4;
+        rotate: 180deg;
+    }
+    &::before {
+        content: ''; 
+        position: absolute;
+        right: 400px; 
+        top: 100px;
+        border: 25px solid transparent;
+        border-left: 18px solid #041080;
+        rotate: 180deg;
+    }
+}
+
+.card6 {
+    position: relative;
+    &::after {
+        content: ''; 
+        position: absolute;
+        left: 360px; 
+        top: 100px;
+        border: 25px solid transparent;
+        border-left: 18px solid #f2f2f4;
+        rotate: 180deg;
+    }
+    &::before {
+        content: ''; 
+        display: none;
+    }
+}
+
+@media (max-width: 1300px) {
+    .scheme {
+        &_cards {
+            &__card {
+                width: 360px;
+                height: 250px;
+
+                &_number {
+                    left: 40px;
+                    top: 40px;
+                    font-size: 36px;
+                }
+    
+                &_heading {
+                    font-size: 18px;
+                    margin: 40px 40px  0 100px;
+                }
+    
+                &_text {
+                    font-size: 18px;
+                    margin: 15px 40px 0 100px;
+                }
+            }
+        }
+    }
+
+    .card3 {
+        &::before {
+            content: ''; 
+            right: 160px; 
+            top: 246px;
+        }
+    }
+
+    .card4 {
+        &::after {
+            content: ''; 
+            left: 159px; 
+            top: -4px;
+        }
+        &::before {
+            content: ''; 
+            right: 360px; 
+            top: 100px;
+        }
+    }
+
+    .card5 {
+        &::after {
+            content: ''; 
+            left: 318px; 
+            top: 100px;
+        }
+        &::before {
+            content: ''; 
+            right: 360px; 
+            top: 100px;
+        }
+    }
+    .card6 {
+        &::after {
+            content: ''; 
+            left: 317px; 
+            top: 100px;
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+    .scheme {
+        &_cards {
+            &__card {
+                width: 320px;
+                height: 250px;
+
+                &_number {
+                    left: 30px;
+                    top: 40px;
+                    font-size: 34px;
+                }
+    
+                &_heading {
+                    font-size: 17px;
+                    margin: 40px 30px  0 80px;
+                }
+    
+                &_text {
+                    font-size: 16px;
+                    margin: 15px 30px 0 80px;
+                }
+            }
+        }
+    }
+    .card3 {
+        &::before {
+            content: ''; 
+            right: 140px; 
+            top: 246px;
+        }
+    }
+    .card4 {
+        &::after {
+            content: ''; 
+            left: 139px; 
+            top: -4px;
+        }
+        &::before {
+            content: ''; 
+            right: 320px; 
+            top: 100px;
+        }
+    }
+    .card5 {
+        &::after {
+            content: ''; 
+            left: 277px; 
+            top: 100px;
+        }
+        &::before {
+            content: ''; 
+            right: 320px; 
+            top: 100px;
+        }
+    }
+    .card6 {
+        &::after {
+            content: ''; 
+            left: 277px; 
+            top: 100px;
+        }
+    }
+}
+
+@media (max-width: 1050px) {
+    .scheme {
+        &_cards {
+            &__card {
+                width: 280px;
+                height: 250px;
+                &_number {
+                    left: 30px;
+                    top: 40px;
+                    font-size: 32px;
+                }
+    
+                &_heading {
+                    font-size: 16px;
+                    margin: 40px 20px  0 80px;
+                }
+    
+                &_text {
+                    font-size: 15px;
+                    margin: 15px 20px 0 80px;
+                }
+            }
+        }
+    }
+    .card3 {
+        &::before {
+            content: ''; 
+            right: 120px; 
+            top: 246px;
+        }
+    }
+    .card4 {
+        &::after {
+            content: ''; 
+            left: 119px; 
+            top: -4px;
+        }
+        &::before {
+            content: ''; 
+            right: 280px; 
+            top: 100px;
+        }
+    }
+    .card5 {
+        &::after {
+            content: ''; 
+            left: 237px; 
+            top: 100px;
+        }
+        &::before {
+            content: ''; 
+            right: 280px; 
+            top: 100px;
+        }
+    }
+    .card6 {
+        &::after {
+            content: ''; 
+            left: 237px; 
+            top: 100px;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .scheme {
+        &_cards {
+            &__card {
+                width: 240px;
+                height: 250px;
+                &_number {
+                    left: 15px;
+                    top: 20px;
+                    font-size: 32px;
+                }
+    
+                &_heading {
+                    font-size: 16px;
+                    margin: 20px 20px  0 60px;
+                }
+    
+                &_text {
+                    font-size: 15px;
+                    margin: 15px 20px 0 60px;
+                }
+            }
+        }
+    }
+    .card3 {
+        &::before {
+            content: ''; 
+            right: 100px; 
+            top: 246px;
+        }
+    }
+    .card4 {
+        &::after {
+            content: ''; 
+            left: 99px; 
+            top: -4px;
+        }
+        &::before {
+            content: ''; 
+            right: 240px; 
+            top: 100px;
+        }
+    }
+    .card5 {
+        &::after {
+            content: ''; 
+            left: 197px; 
+            top: 100px;
+        }
+        &::before {
+            content: ''; 
+            right: 240px; 
+            top: 100px;
+        }
+    }
+    .card6 {
+        &::after {
+            content: ''; 
+            left: 197px; 
+            top: 100px;
+        }
+    }
+}
+
+@media (max-width: 780px) {
+    .scheme {
+        &_cards {
+            &__card {
+                width: 200px;
+                height: 250px;
+                &_number {
+                    left: 10px;
+                    top: 10px;
+                    font-size: 32px;
+                }
+    
+                &_heading {
+                    font-size: 15px;
+                    margin: 10px 20px  0 50px;
+                }
+
+                &_text {
+                    font-size: 15px;
+                    margin: 10px 20px 0 50px;
+                }
+            }
+        }
+    }
+    .card3 {
+        &::before {
+            content: ''; 
+            right: 80px; 
+            top: 246px;
+        }
+    }
+    .card4 {
+        &::after {
+            content: ''; 
+            left: 79px; 
+            top: -4px;
+        }
+        &::before {
+            content: ''; 
+            right: 200px; 
+            top: 100px;
+        }
+    }
+    .card5 {
+        &::after {
+            content: ''; 
+            left: 157px; 
+            top: 100px;
+        }
+        &::before {
+            content: ''; 
+            right: 200px; 
+            top: 100px;
+        }
+    }
+    .card6 {
+        &::after {
+            content: ''; 
+            left: 157px; 
+            top: 100px;
+        }
+    }
+}
+
+@media (max-width: 660px) {
+    .scheme {
+        &_cards {
+            &__card {
+                width: 180px;
+                height: 250px;
+                &_number {
+                    left: 5px;
+                    top: 15px;
+                    font-size: 30px;
+                }
+    
+                &_heading {
+                    font-size: 14px;
+                    margin: 18px 15px  0 40px;
+                }
+
+                &_text {
+                    font-size: 14px;
+                    margin: 10px 15px 0 40px;
+                }
+            }
+        }
+    }
+    .card3 {
+        &::before {
+            content: ''; 
+            right: 70px; 
+            top: 246px;
+        }
+    }
+    .card4 {
+        &::after {
+            content: ''; 
+            left: 69px; 
+            top: -4px;
+        }
+        &::before {
+            content: ''; 
+            right: 180px; 
+            top: 100px;
+        }
+    }
+    .card5 {
+        &::after {
+            content: ''; 
+            left: 137px; 
+            top: 100px;
+        }
+        &::before {
+            content: ''; 
+            right: 180px; 
+            top: 100px;
+        }
+    }
+    .card6 {
+        &::after {
+            content: ''; 
+            left: 137px; 
+            top: 100px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .scheme {
+        &_cards {
+            
+            &__card {
+                width: 180px;
+                height: 250px;
+                &::before {
+                    display: none;
+                }
+                &_number {
+                    left: 5px;
+                    top: 15px;
+                    font-size: 30px;
+                }
+    
+                &_heading {
+                    font-size: 14px;
+                    margin: 18px 15px  0 40px;
+                }
+
+                &_text {
+                    font-size: 14px;
+                    margin: 10px 15px 0 40px;
+                }
+            }
+        }
+    }
+    .card2 {
+        &::after {
+            display: none;
+        }
+    }
+    .card3 {
+        &::before {
+            display: none;
+        }
+        &::after {
+            display: none;
+        }
+    }
+    .card4 {
+        &::after {
+            display: none;
+        }
+        &::before {
+            display: none;
+        }
+    }
+    .card5 {
+        &::after {
+            display: none;
+        }
+        &::before {
+            display: none;
+        }
+    }
+    .card6 {
+        &::after {
+            display: none;
+        }
+    }
+}
